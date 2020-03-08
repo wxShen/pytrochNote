@@ -9,8 +9,8 @@ x = Variable(x)
 
 x_np = x.data.numpy()
 y_relu = F.relu(x).data.numpy()
-y_sigmoid = F.sigmoid(x).data.numpy()
-y_tanh = F.tanh(x).data.numpy()
+y_sigmoid = torch.sigmoid(x).data.numpy()
+y_tanh = torch.tanh(x).data.numpy()
 y_softmax = F.softmax(x).data.numpy()
 
 
